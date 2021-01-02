@@ -39,7 +39,10 @@
   },
   "description": "A website created with full of fun. You can also be part of this amazing project.",
   "main": "index.js",
-  "devDependencies": {},
+  "devDependencies": {
+    "eslint": "^7.17.0",
+    "prettier": "^2.2.1"
+  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/sushantbasak/Analectica-Front-End-.git"
@@ -48,6 +51,5 @@
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/sushantbasak/Analectica-Front-End-/issues"
-  },
-  "homepage": "https://github.com/sushantbasak/Analectica-Front-End-#readme"
+  }
 }

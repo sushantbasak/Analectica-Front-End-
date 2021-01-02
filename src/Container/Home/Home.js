@@ -1,14 +1,5 @@
-import React from 'react'
-
-const style = {
-    color : "red",
-    backgroundColor : 'orange'
-}
+import React from "react";
 
 export default function Home() {
-    return (
-        <div style ={style}>
-            Home Page Connected Successfully
-        </div>
-    )
+  return <div>Home Page Connected Successfully</div>;
 }
