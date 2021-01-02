@@ -6,8 +6,7 @@ export default function App() {
   return (
     <Router>
       <div>
-        <h2>Analectica - Frontend</h2>
-        <nav>
+        <div>
           <ul>
             <li>
               <Link to="/"> Home </Link>
@@ -16,8 +15,7 @@ export default function App() {
               <Link to="/about">About</Link>
             </li>
           </ul>
-        </nav>
-        <hr />
+        </div>
         <Switch>
           <Route exact path="/" component={Home} />
           <Route path="/about" component={About} />
