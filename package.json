@@ -44,7 +44,7 @@
   "devDependencies": {},
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/sushantbasak/Analectica-Front-End-.git"
+    "url": "http://localhost:3000/"
   },
   "author": "Sushant",
   "license": "ISC",
