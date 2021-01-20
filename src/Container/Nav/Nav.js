@@ -1,33 +1,30 @@
-import React from "react";
-import { Link } from "react-router-dom";
+import React from 'react';
+import { Link } from 'react-router-dom';
 import classes from './Nav.module.css';
 
-
 export default function Nav() {
- 
   return (
-     <nav>
-     <div className={classes.logo}>
-       <h4>The Navbar</h4>
-     </div>
-     <ul class={classes.navlink}>
-       <li>
-         <Link to="/">Home</Link>
-       </li>
-       <li>
-       <Link to="/about">About</Link>
-       </li>
-       <li>
-       <Link to="/users/login">SignIn</Link>
-       </li>
-     </ul>
-     <div  className={classes.burger}>
-       <div className={classes.line1}></div>
-       <div className={classes.line2}></div>
-       <div className={classes.line3}></div>
-     </div>
-     
-   </nav>
+    <nav>
+      <div className={classes.logo}>
+        <h4>The Navbar</h4>
+      </div>
+      <ul className={classes.navlink}>
+        <li>
+          <Link to="/">Home</Link>
+        </li>
+        <li>
+          <Link to="/about">About</Link>
+        </li>
+        <li>
+          <Link to="/users/login">SignIn</Link>
+        </li>
+      </ul>
+      <div className={classes.burger}>
+        {/* <div className={classes.line1}></div>
+        <div className={classes.line2}></div>
+        <div className={classes.line3}></div> */}
+      </div>
+    </nav>
   );
 }
 // const navSlide = () => {
@@ -51,5 +48,3 @@ export default function Nav() {
 //     burger.classList.toggle("toggle");
 //   });
 // };
-
-
