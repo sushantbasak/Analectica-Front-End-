@@ -4,7 +4,7 @@ import classes from './Nav.module.css';
 
 export default function Nav() {
   return (
-    <nav>
+    <nav className={classes.nav1}>
       <div className={classes.logo}>
         <h4>The Navbar</h4>
       </div>
@@ -16,7 +16,7 @@ export default function Nav() {
           <Link to="/about">About</Link>
         </li>
         <li>
-          <Link to="/users/login">SignIn</Link>
+          <Link to="/login">SignIn</Link>
         </li>
       </ul>
       <div className={classes.burger}>
