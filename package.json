@@ -6,6 +6,14 @@
     "@testing-library/jest-dom": "^5.11.8",
     "@testing-library/react": "^11.2.2",
     "@testing-library/user-event": "^12.6.0",
+    "autoprefixer": "^9.8.6",
+    "eslint-config-airbnb": "^18.2.1",
+    "eslint-config-prettier": "^7.1.0",
+    "eslint-plugin-prettier": "^3.3.1",
+    "husky": "^4.3.8",
+    "lint-staged": "^10.5.3",
+    "postcss": "^7.0.35",
+    "prettier": "^2.2.1",
     "react": "^17.0.1",
     "react-dom": "^17.0.1",
     "react-router": "^5.2.0",
@@ -17,13 +25,50 @@
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "lint": "eslint --ext .js --ext .jsx src/ && prettier --check src/**/*.css",
+    "lint:fix": "eslint --fix --ext .js --ext .jsx src/ && prettier --write src/**/*.css"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged"
+    }
+  },
+  "lint-staged": {
+    "src/**/*.{js,jsx}": [
+      "eslint --fix"
+    ],
+    "src/**/*.css": [
+      "prettier --write"
+    ]
   },
   "eslintConfig": {
     "extends": [
       "react-app",
-      "react-app/jest"
-    ]
+      "react-app/jest",
+      "airbnb",
+      "airbnb/hooks",
+      "plugin:prettier/recommended"
+    ],
+    "rules": {
+      "react/react-in-jsx-scope": 0,
+      "prettier/prettier": [
+        "error",
+        {
+          "endOfLine": "auto"
+        }
+      ],
+      "react/jsx-filename-extension": [
+        "error",
+        {
+          "extensions": [
+            ".js",
+            ".jsx"
+          ]
+        }
+      ],
+      "react/jsx-one-expression-per-line": 0
+    }
   },
   "browserslist": {
     "production": [
@@ -42,7 +87,7 @@
   "devDependencies": {},
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/sushantbasak/Analectica-Front-End-.git"
+    "url": "http://localhost:3000/"
   },
   "author": "Sushant",
   "license": "ISC",
