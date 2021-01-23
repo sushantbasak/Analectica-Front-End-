@@ -1,5 +1,5 @@
-import React from 'react';
+// import React from 'react';
+// import { useForm } from 'react-hook-form';
+// import classes from './Register.module.css';
 
-export default function Register() {
-  return <div>Register Page reached</div>;
-}
+// export default Login;
