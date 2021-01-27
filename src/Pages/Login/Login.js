@@ -4,9 +4,7 @@ import classes from './Login.module.css';
 
 export default function Login() {
   const [show, changeShow] = useState(true);
-  const toggler = () => {
-    changeShow(!show);
-  };
+  const toggler = () => changeShow(!show);
   return (
     <>
       <div>SignUp Page reached</div>
