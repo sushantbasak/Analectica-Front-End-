@@ -5,7 +5,7 @@
   font-family: "Poppins", sans-serif;
 }
 
-nav {
+.nav1 {
   display: flex;
   justify-content: space-around;
   align-items: center;
@@ -57,9 +57,6 @@ nav {
 }
 
 @media screen and (max-width: 768px) {
-  body {
-    overflow-x: hidden;
-  }
   .navlink {
     position: absolute;
     right: 0px;
